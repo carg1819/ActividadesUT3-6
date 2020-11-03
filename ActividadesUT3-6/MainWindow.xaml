@@ -1,0 +1,33 @@
+﻿<Window x:Class="ActividadesUT3_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActividadesUT3_6"
+        mc:Ignorable="d"
+        Title="4 estaciones" Height="450" Width="800" Icon="48 (2).ico">
+    <DockPanel Background="LightBlue">
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" TextAlignment="Center" FontSize="36">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFEC1F1F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>Las 4 estaciones</TextBlock>
+        <UniformGrid>
+            <ScrollViewer Margin="20" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Image Source="invierno.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Image Source="otoño.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Image Source="primavera.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer Margin="20" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Image Source="verano.jpg"/>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+   
+</Window>
